@@ -1,0 +1,25 @@
+{
+  "name": "api-fetcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "agenda": "^5.0.0",
+    "axios": "^1.7.7",
+    "bottleneck": "^2.19.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "moment-timezone": "^0.5.46",
+    "mongoose": "^8.8.1",
+    "node-cron": "^3.0.3",
+    "socket.io": "^4.8.1",
+    "winston": "^3.17.0"
+  }
+}
