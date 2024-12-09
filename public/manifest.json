@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "My Vite Extension",
+  "name": "Scrollr Official",
   "version": "1.0",
   "permissions": ["storage", "activeTab", "scripting"],
   "host_permissions": ["<all_urls>"],
