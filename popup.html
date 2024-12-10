@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Popup</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        width: 400px; /* Set desired width */
-        height: 600px; /* Set desired height */
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/components/popup/index.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Popup</title>
+  <style>
+    html {
+      overflow-y: hidden;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      min-width: 300px;
+      min-height: 300px;
+      background-color: var(--base);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/components/popup/index.jsx"></script>
+</body>
+
 </html>

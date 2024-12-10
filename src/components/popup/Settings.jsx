@@ -16,7 +16,7 @@ function Settings() {
     
     return (
         <div>
-            <div className="max-w-3xl mx-auto text-center text-text">
+            <div className="text-center text-text w-96">
                 <h2 className='text-2xl text-subtext1 font-semibold m-4 text-left'>Appearance</h2>
                 {/* Centered grid with larger width */}
                 <div className='p-10 rounded shadow-lg bg-surface0 grid mb-4 grid-cols-1 md:grid-cols-2 gap-8'>
