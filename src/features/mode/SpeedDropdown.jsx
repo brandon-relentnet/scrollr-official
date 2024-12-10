@@ -1,7 +1,7 @@
 // src/features/speed/SpeedDropdown.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setCarouselSpeed } from '../../../store/speedSlice';
+import { setCarouselSpeed } from '../../store/speedSlice';
 import Dropdown from '../../components/Dropdown';
 
 const speedOptions = [

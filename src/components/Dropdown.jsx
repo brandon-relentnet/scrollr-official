@@ -1,7 +1,6 @@
 // src/components/Dropdown.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import { useStyles } from '../css/Styles';
 
 function Dropdown({
     options,
@@ -13,7 +12,6 @@ function Dropdown({
 }) {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
-    const styles = useStyles();
 
     const handleSelect = (value) => {
         onSelect(value);
@@ -40,7 +38,7 @@ function Dropdown({
     const selectedOption = options.find(option => String(option.value) === String(selectedValue));
 
     return (
-        <div className={`${styles.dropdown}`} ref={dropdownRef}>
+        <div className='w-full mx-auto relative' ref={dropdownRef}>
             <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}

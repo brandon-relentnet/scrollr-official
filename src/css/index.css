@@ -7,8 +7,3 @@
 body {
     font-family: var(--fontFamily);
 }
-
-.event-slide {
-    min-width: 300px; /* Set your preferred minimum width */
-}
-

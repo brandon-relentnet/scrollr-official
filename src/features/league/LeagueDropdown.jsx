@@ -1,7 +1,7 @@
 // src/features/league/LeagueDropdown.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setLeague } from '../../../store/leagueSlice';
+import { setLeague } from '../../store/leagueSlice';
 import Dropdown from '../../components/Dropdown';
 
 const leagueOptions = [

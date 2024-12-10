@@ -1,7 +1,7 @@
 // src/features/counter/FontFamilyDropdown.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setFontFamily } from '../../../store/fontFamilySlice';
+import { setFontFamily } from '../../store/fontFamilySlice';
 import Dropdown from '../../components/Dropdown';
 
 const fontFamilyOptions = [

@@ -1,7 +1,7 @@
 // src/features/counter/ThemeDropdown.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setTheme } from '../../../store/themeSlice';
+import { setTheme } from '../../store/themeSlice';
 import Dropdown from '../../components/Dropdown';
 
 const themeOptions = [

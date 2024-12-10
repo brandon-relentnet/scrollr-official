@@ -1,8 +1,8 @@
 // src/features/teams/FavoriteTeamDropdown.jsx
 import React, { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setFavoriteTeam, removeFavoriteTeam } from '../../../store/favoriteTeamsSlice';
-import { pinEvent, unpinEvent } from '../../../store/pinnedEventsSlice';
+import { setFavoriteTeam, removeFavoriteTeam } from '../../store/favoriteTeamsSlice';
+import { pinEvent, unpinEvent } from '../../store/pinnedEventsSlice';
 import Dropdown from '../../components/Dropdown';
 
 const FavoriteTeamDropdown = ({ events }) => {

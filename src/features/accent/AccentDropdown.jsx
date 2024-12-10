@@ -1,7 +1,7 @@
 // src/features/counter/AccentDropdown.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setAccent } from '../../../store/accentSlice';
+import { setAccent } from '../../store/accentSlice';
 import Dropdown from '../../components/Dropdown';
 
 const accentOptions = [
