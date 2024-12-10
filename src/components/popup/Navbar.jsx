@@ -1,24 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faUser, faHouse } from '@fortawesome/free-solid-svg-icons';
 import { toast } from 'react-toastify'; // Import toast if you choose to add notifications
 
 const Navbar = ({ activeTab, setActiveTab }) => {
     return (
         <nav className="flex items-center justify-between p-4 bg-mantle text-text sticky top-0 z-10 shadow">
-            <div className="text-lg font-semibold">
+            {/* Logo */}
+            <div className="flex items-center space-x-2">
+                <button
+                    onClick={() => setActiveTab('home')}
+                    className={`flex items-center justify-center p-2 rounded ${activeTab === 'home' ? 'bg-surface0' : 'hover:bg-base'
+                        }`}
+                    aria-label="Home"
+                >
+                    <FontAwesomeIcon icon={faHouse} className="h-5 w-5" />
+                </button>
+            </div>
+            <div className="text-lg font-semibold p-2">
                 Scrollr v1.0
             </div>
-            <div className="flex space-x-4">
-                {/* Settings Button */}
-                <button
-                    onClick={() => setActiveTab('settings')}
-                    className={`flex items-center justify-center p-2 rounded ${activeTab === 'settings' ? 'bg-surface0' : 'hover:bg-base'
-                        }`}
-                    aria-label="Settings"
-                >
-                    <FontAwesomeIcon icon={faCog} className="h-5 w-5" />
-                </button>
-
+            <div className="flex space-x-2">
                 {/* Accounts Button with Tooltip */}
                 <div className="relative group">
                     <button
@@ -58,6 +59,15 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                     </div>
                 </div>
 
+                {/* Settings Button */}
+                <button
+                    onClick={() => setActiveTab('settings')}
+                    className={`flex items-center justify-center p-2 rounded ${activeTab === 'settings' ? 'bg-surface0' : 'hover:bg-base'
+                        }`}
+                    aria-label="Settings"
+                >
+                    <FontAwesomeIcon icon={faCog} className="h-5 w-5" />
+                </button>
                 {/* Future navbar items can be added here */}
             </div>
         </nav>

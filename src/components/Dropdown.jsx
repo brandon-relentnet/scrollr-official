@@ -60,7 +60,7 @@ function Dropdown({
             </button>
 
             <div
-                className={`absolute mt-2 w-full bg-surface2 z-10 rounded shadow-lg transition-[max-height] duration-300 ease-in-out ${isOpen ? 'max-h-48 overflow-y-auto' : 'max-h-0 overflow-hidden'}`}
+                className={`absolute hidden-scrollbar mt-2 w-full bg-surface2 z-10 rounded shadow-lg transition-[max-height] duration-300 ease-in-out ${isOpen ? 'max-h-48 overflow-y-auto' : 'max-h-0 overflow-hidden'}`}
                 style={{ maxHeight: isOpen ? '12rem' : '0' }}
             >
                 {options.map((option) => (

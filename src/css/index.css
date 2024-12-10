@@ -7,3 +7,12 @@
 body {
     font-family: var(--fontFamily);
 }
+
+/* Hide scrollbar for modern browsers */
+.hidden-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
