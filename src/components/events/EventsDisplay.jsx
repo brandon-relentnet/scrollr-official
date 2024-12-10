@@ -102,21 +102,21 @@ const EventsDisplay = () => {
     const manualPinnedEvents = events.filter(event => manuallyPinnedEvents.includes(event.id));
 
     return (
-        <div className="my-0 bg-base overflow-hidden">
-            <div className="flex items-stretch">
+        <div className="fixed bottom-0 left-0 w-full bg-mantle z-50 flex items-center overflow-hidden shadow-t">
+            <div className="flex w-full h-full">
                 {/* Pinned Events Section */}
                 {(favoritePinnedEvents.length > 0 || manualPinnedEvents.length > 0) && (
                     <div className="flex flex-shrink-0 h-full overflow-hidden rounded bg-mantle">
                         {/* Favorite Team Pinned Events */}
                         {favoritePinnedEvents.map(event => (
-                            <div key={event.id} className="event-slide">
+                            <div key={event.id}>
                                 <EventCard event={event} />
                             </div>
                         ))}
 
                         {/* Manually Pinned Events */}
                         {manualPinnedEvents.map(event => (
-                            <div key={event.id} className="event-slide">
+                            <div key={event.id}>
                                 <EventCard event={event} />
                             </div>
                         ))}
@@ -125,17 +125,22 @@ const EventsDisplay = () => {
 
                 {/* Carousel for Unpinned Events */}
                 {unpinnedEvents.length > 0 ? (
-                    <div className="overflow-hidden h-full flex-grow" ref={carouselContainerRef}>
-                        <Slider key={`slider-${slidesToShow}`} ref={sliderRef} {...settings}>
+                    <div className="flex-grow h-full overflow-hidden" ref={carouselContainerRef}>
+                        <Slider
+                            key={`slider-${slidesToShow}`}
+                            ref={sliderRef}
+                            {...settings}
+                            className="overflow-hidden"
+                        >
                             {unpinnedEvents.map(event => (
-                                <div key={event.id} className="event-slide">
+                                <div key={event.id} className="p-0 m-0 box-border">
                                     <EventCard event={event} />
                                 </div>
                             ))}
                         </Slider>
                     </div>
                 ) : (
-                    <p>No more events to display.</p>
+                    <p className="text-center w-full">No more events to display.</p>
                 )}
             </div>
         </div>

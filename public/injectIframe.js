@@ -11,7 +11,7 @@
   iframe.style.bottom = "0";
   iframe.style.left = "0";
   iframe.style.width = "100%";
-  iframe.style.height = "8.5rem";
+  iframe.style.height = "auto";
   iframe.style.zIndex = "9999";
   iframe.style.border = "none";
   iframe.style.pointerEvents = "auto";
