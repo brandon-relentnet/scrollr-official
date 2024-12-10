@@ -14,9 +14,7 @@ const DataDisplay = () => {
     if (isError) return <p>Error loading events.</p>;
 
     return (
-        <div>
-            <EventsDisplay events={events} />
-        </div>
+        <EventsDisplay events={events} />
     );
 };
 
